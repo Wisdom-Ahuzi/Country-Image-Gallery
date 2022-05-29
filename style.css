@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&family=Open+Sans:wght@300&family=Overpass&family=Raleway:ital,wght@0,600;1,100&family=Roboto+Condensed:ital,wght@0,300;1,300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: all 0.2s ease-in;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: rgb(187, 187, 187);
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./images/roberto-nickson-vZ1JAXUO3-0-unsplash.jpg);
+    background-color: rgb(187, 187, 187);
+    background-blend-mode: multiply;
+    filter: blur(.4px);
+    -webkit-filter: blur(.4px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+.container {
+    width: 75%;
+    height: 85%;
+    background: #16222A;
+    /* fallback for old browsers */
+    border-radius: 10px;
+    display: flex;
+}
+
+.aside {
+    width: 16%;
+    height: 100%;
+    background-color: hsl(217, 19%, 24%);
+    color: rgb(187, 187, 187);
+    display: flex;
+    justify-content: center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.side {
+    padding-top: 20px;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.profile {
+    /* border-bottom: 2px solid black; */
+    /* background-color: red; */
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.profile>img {
+    object-fit: cover;
+}
+
+.profile>p {
+    font-size: 90%;
+}
+
+.profile>span {
+    font-size: 80%;
+}
+
+.profile>img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.categories {
+    display: flex;
+    height: 55%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.categories>p {
+    font-size: 100%;
+}
+
+.categories>ul {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+.categories>ul>li>a {
+    text-decoration: none;
+    color: rgb(187, 187, 187);
+    font-size: 85%;
+}
+
+.filter {
+    display: none;
+}
+
+.unfilter {
+    position: relative;
+    height: 400px;
+}
+
+.gallery {
+    width: 80%;
+    height: 100%;
+    padding-left: 32px;
+    background: #16222A;
+    /* fallback for old browsers */
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: hsl(193, 38%, 86%);
+    text-align: center;
+}
+
+.gallery>form {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery>form>input {
+    width: 50%;
+    height: 5vh;
+    outline: hsl(217, 19%, 38%);
+    border-color: hsl(217, 19%, 38%);
+    border-radius: 10px;
+    padding-left: 3%;
+    color: hsl(218, 23%, 16%);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.region-identifier {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.gallery>.images {
+    display: grid;
+    width: 100%;
+    height: 78%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.gallery>.images::-webkit-scrollbar {
+    width: 0px;
+}
+
+.gallery>.images>.img {
+    background: -webkit-linear-gradient(to right, #3A6073, #16222A);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3A6073, #16222A);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 10px;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+.gallery>.images>.img:hover {
+    box-shadow: 0 0 10px hsl(217, 19%, 38%);
+    transform: scale(1.02);
+}
+
+.img>img {
+    width: 100%;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 10px;
+    height: 200px;
+    border-radius: 10px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    object-fit: cover;
+}
+
+.gallery>.images>.img>#nation {
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+
+#capital,
+#population,
+#region {
+    padding-left: 10px;
+    padding-bottom: 5px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.attribution {
+    width: 100%;
+    background: #16222A;
+    /* fallback for old browsers */
+    text-align: center;
+}
+
+.attribution>a {
+    color: hsl(193, 38%, 86%);
+}
+
+@media screen and (min-width:600px) and (max-width: 978px) {
+    .container {
+        background-image: url(./images/roberto-nickson-vZ1JAXUO3-0-unsplash.jpg);
+        background-color: transparent;
+        background-blend-mode: multiply;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .aside {
+        display: none;
+    }
+
+    .gallery {
+        width: 98%;
+        height: 100%;
+        padding-left: 20px;
+    }
+
+    .gallery>.images {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+}
+
+@media screen and (min-width:300px) and (max-width: 599px) {
+    .container {
+        width: 85%;
+        height: 95%;
+        background-image: url(./images/roberto-nickson-vZ1JAXUO3-0-unsplash.jpg);
+        background-color: transparent;
+        background-blend-mode: multiply;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .aside {
+        display: none;
+    }
+
+    .gallery {
+        width: 98%;
+        height: 100%;
+        padding-left: 5px;
+    }
+
+    .gallery>.images {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .attribution>a,
+    .attribution {
+        color: hsl(193, 38%, 86%);
+        font-size: 12px;
+    }
+}
